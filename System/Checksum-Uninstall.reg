@@ -1,0 +1,16 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\*\shell\certutil-MD2]
+
+[-HKEY_CLASSES_ROOT\*\shell\certutil-MD4]
+
+[-HKEY_CLASSES_ROOT\*\shell\certutil-MD5]
+
+[-HKEY_CLASSES_ROOT\*\shell\certutil-SHA1]
+
+[-HKEY_CLASSES_ROOT\*\shell\certutil-SHA256]
+
+[-HKEY_CLASSES_ROOT\*\shell\certutil-SHA384]
+
+[-HKEY_CLASSES_ROOT\*\shell\certutil-SHA512]
+
