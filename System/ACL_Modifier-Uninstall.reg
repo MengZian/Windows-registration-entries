@@ -1,0 +1,20 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\*\shell\runas]
+
+[-HKEY_CLASSES_ROOT\*\shell\GrantFullAccess]
+
+[-HKEY_CLASSES_ROOT\*\shell\DenyAllAccess]
+
+[-HKEY_CLASSES_ROOT\Directory\shell\runas]
+
+[-HKEY_CLASSES_ROOT\Directory\shell\GrantFullAccess]
+
+[-HKEY_CLASSES_ROOT\Directory\shell\DenyAllAccess]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\runas]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\GrantFullAccess]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\DenyAllAccess]
+
