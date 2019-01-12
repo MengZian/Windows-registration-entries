@@ -1,0 +1,83 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\*\shell\runas]
+
+[HKEY_CLASSES_ROOT\*\shell\runas]
+@="Grant full access to current file(s)"
+"Icon"="\"%windir%\\System32\\imageres.dll\",-78"
+
+[HKEY_CLASSES_ROOT\*\shell\runas\command]
+@="cmd.exe /U /D /T:07 /E:ON /F:ON /V:ON /K takeown.exe /F \"%1\"&icacls.exe \"%1\" /reset /C&icacls.exe \"%1\" /grant:r Everyone:F /C&icacls.exe \"%1\""
+
+[-HKEY_CLASSES_ROOT\*\shell\GrantFullAccess]
+
+[HKEY_CLASSES_ROOT\*\shell\GrantFullAccess]
+@="Grant full access to current file(s)"
+"Icon"="\"%windir%\\System32\\imageres.dll\",-106"
+
+[HKEY_CLASSES_ROOT\*\shell\GrantFullAccess\command]
+@="cmd.exe /U /D /T:07 /E:ON /F:ON /V:ON /K takeown.exe /F \"%1\"&icacls.exe \"%1\" /reset /C&icacls.exe \"%1\" /grant:r Everyone:F /C&icacls.exe \"%1\""
+
+[-HKEY_CLASSES_ROOT\*\shell\DenyAllAccess]
+
+[HKEY_CLASSES_ROOT\*\shell\DenyAllAccess]
+@="Deny all access to current file(s)"
+"Icon"="\"%windir%\\System32\\imageres.dll\",-105"
+
+[HKEY_CLASSES_ROOT\*\shell\DenyAllAccess\command]
+@="cmd.exe /U /D /T:07 /E:ON /F:ON /V:ON /K takeown.exe /F \"%1\"&icacls.exe \"%1\" /reset /C&icacls.exe \"%1\" /deny Everyone:F /C&icacls.exe \"%1\""
+
+[-HKEY_CLASSES_ROOT\Directory\shell\runas]
+
+[HKEY_CLASSES_ROOT\Directory\shell\runas]
+@="Grant full access to current folder(s)"
+"Icon"="\"%windir%\\System32\\imageres.dll\",-78"
+
+[HKEY_CLASSES_ROOT\Directory\shell\runas\command]
+@="cmd.exe /U /D /T:07 /E:ON /F:ON /V:ON /K takeown.exe /F \"%1\" /R /D Y&icacls.exe \"%1\" /reset /T /C&icacls.exe \"%1\" /grant:r Everyone:F /T /C&icacls.exe \"%1\""
+
+[-HKEY_CLASSES_ROOT\Directory\shell\GrantFullAccess]
+
+[HKEY_CLASSES_ROOT\Directory\shell\GrantFullAccess]
+@="Grant full access to current folder(s)"
+"Icon"="\"%windir%\\System32\\imageres.dll\",-106"
+
+[HKEY_CLASSES_ROOT\Directory\shell\GrantFullAccess\command]
+@="cmd.exe /U /D /T:07 /E:ON /F:ON /V:ON /K takeown.exe /F \"%1\" /R /D Y&icacls.exe \"%1\" /reset /T /C&icacls.exe \"%1\" /grant:r Everyone:F /T /C&icacls.exe \"%1\""
+
+[-HKEY_CLASSES_ROOT\Directory\shell\DenyAllAccess]
+
+[HKEY_CLASSES_ROOT\Directory\shell\DenyAllAccess]
+@="Deny all access to current folder(s)"
+"Icon"="\"%windir%\\System32\\imageres.dll\",-105"
+
+[HKEY_CLASSES_ROOT\Directory\shell\DenyAllAccess\command]
+@="cmd.exe /U /D /T:07 /E:ON /F:ON /V:ON /K takeown.exe /F \"%1\" /R /D Y&icacls.exe \"%1\" /reset /T /C&icacls.exe \"%1\" /deny Everyone:F /T /C&icacls.exe \"%1\""
+
+[-HKEY_CLASSES_ROOT\Drive\shell\runas]
+
+[HKEY_CLASSES_ROOT\Drive\shell\runas]
+@="Grant full access to current drive(s)"
+"Icon"="\"%windir%\\System32\\imageres.dll\",-78"
+
+[HKEY_CLASSES_ROOT\Drive\shell\runas\command]
+@="cmd.exe /U /D /T:07 /E:ON /F:ON /V:ON /K takeown.exe /F \"%1\\\"&icacls.exe \"%1\\\" /reset /C&icacls.exe \"%1\\\" /grant:r Everyone:F /C&icacls.exe \"%1\\\""
+
+[-HKEY_CLASSES_ROOT\Drive\shell\GrantFullAccess]
+
+[HKEY_CLASSES_ROOT\Drive\shell\GrantFullAccess]
+@="Grant full access to current drive(s)"
+"Icon"="\"%windir%\\System32\\imageres.dll\",-106"
+
+[HKEY_CLASSES_ROOT\Drive\shell\GrantFullAccess\command]
+@="cmd.exe /U /D /T:07 /E:ON /F:ON /V:ON /K takeown.exe /F \"%1\\\"&icacls.exe \"%1\\\" /reset /C&icacls.exe \"%1\\\" /grant:r Everyone:F /C&icacls.exe \"%1\\\""
+
+[-HKEY_CLASSES_ROOT\Drive\shell\DenyAllAccess]
+
+[HKEY_CLASSES_ROOT\Drive\shell\DenyAllAccess]
+@="Deny all access to current drive(s)"
+"Icon"="\"%windir%\\System32\\imageres.dll\",-105"
+
+[HKEY_CLASSES_ROOT\Drive\shell\DenyAllAccess\command]
+@="cmd.exe /U /D /T:07 /E:ON /F:ON /V:ON /K takeown.exe /F \"%1\\\"&icacls.exe \"%1\\\" /reset /C&icacls.exe \"%1\\\" /deny Everyone:F /C&icacls.exe \"%1\\\""
+
