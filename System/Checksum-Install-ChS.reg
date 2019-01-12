@@ -1,0 +1,58 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\*\shell\certutil-MD2]
+
+[-HKEY_CLASSES_ROOT\*\shell\certutil-MD4]
+
+[-HKEY_CLASSES_ROOT\*\shell\certutil-MD5]
+
+[-HKEY_CLASSES_ROOT\*\shell\certutil-SHA1]
+
+[-HKEY_CLASSES_ROOT\*\shell\certutil-SHA256]
+
+[-HKEY_CLASSES_ROOT\*\shell\certutil-SHA384]
+
+[-HKEY_CLASSES_ROOT\*\shell\certutil-SHA512]
+
+[HKEY_CLASSES_ROOT\*\shell\certutil-MD2]
+@="计算MD2"
+
+[HKEY_CLASSES_ROOT\*\shell\certutil-MD2\command]
+@="cmd.exe /U /D /T:07 /E:ON /F:ON /V:ON /K certutil.exe -hashfile \"%1\" MD2"
+
+[HKEY_CLASSES_ROOT\*\shell\certutil-MD4]
+@="计算MD4"
+
+[HKEY_CLASSES_ROOT\*\shell\certutil-MD4\command]
+@="cmd.exe /U /D /T:07 /E:ON /F:ON /V:ON /K certutil.exe -hashfile \"%1\" MD4"
+
+[HKEY_CLASSES_ROOT\*\shell\certutil-MD5]
+@="计算MD5"
+
+[HKEY_CLASSES_ROOT\*\shell\certutil-MD5\command]
+@="cmd.exe /U /D /T:07 /E:ON /F:ON /V:ON /K certutil.exe -hashfile \"%1\" MD5"
+
+[HKEY_CLASSES_ROOT\*\shell\certutil-SHA1]
+@="计算SHA1"
+
+[HKEY_CLASSES_ROOT\*\shell\certutil-SHA1\command]
+@="cmd.exe /U /D /T:07 /E:ON /F:ON /V:ON /K certutil.exe -hashfile \"%1\" SHA1"
+
+[HKEY_CLASSES_ROOT\*\shell\certutil-SHA256]
+@="计算SHA256"
+
+[HKEY_CLASSES_ROOT\*\shell\certutil-SHA256\command]
+@="cmd.exe /U /D /T:07 /E:ON /F:ON /V:ON /K certutil.exe -hashfile \"%1\" SHA256"
+
+[HKEY_CLASSES_ROOT\*\shell\certutil-SHA384]
+@="计算SHA384"
+
+[HKEY_CLASSES_ROOT\*\shell\certutil-SHA384\command]
+@="cmd.exe /U /D /T:07 /E:ON /F:ON /V:ON /K certutil.exe -hashfile \"%1\" SHA384"
+
+[HKEY_CLASSES_ROOT\*\shell\certutil-SHA512]
+@="计算SHA512"
+
+[HKEY_CLASSES_ROOT\*\shell\certutil-SHA512\command]
+@="cmd.exe /U /D /T:07 /E:ON /F:ON /V:ON /K certutil.exe -hashfile \"%1\" SHA512"
+
